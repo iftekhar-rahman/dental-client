@@ -1,0 +1,39 @@
+.make-appointment-area{
+    background-image: url(../../../img/chair-2.png);
+    background-position: center;
+    background-size: cover;
+    background-color: #ddd;
+    position: relative;
+    z-index: 2;
+    height: 550px;
+    color: #fff;
+}
+.doctor img {
+    max-height: 650px;
+    margin-top: -100px;
+}
+.doctor {
+    text-align: center;
+}
+.make-appointment-area:after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #0087C7;
+    content: "";
+    z-index: -1;
+    opacity: .9;
+}
+.make-appointment-area .section-title {
+    color: #fff;
+}
+.make-appointment-area .section-title-small{
+    color: #F5B752;
+}
+.make-appointment-area .boxed-btn:hover{
+    background: transparent;
+    border-color: #F5B752;
+    color: #F5B752;
+}

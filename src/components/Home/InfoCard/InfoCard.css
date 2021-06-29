@@ -1,0 +1,18 @@
+.single-info-item {
+    display: flex;
+    justify-content: center;
+    height: 140px;
+    align-items: center;
+    border-radius: 3px;
+    padding: 0 60px;
+}
+.info-primary{
+    background-color: #0087C7;
+}
+.info-secondary{
+    background-color: #F5B752;
+}
+.single-info-item .icon {
+    font-size: 55px;
+    margin-right: 20px;
+}

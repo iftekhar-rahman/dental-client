@@ -1,0 +1,10 @@
+.services-area {
+    padding: 120px 0 200px;
+}
+.single-service-item h4 {
+    color: #203047;
+}
+.single-service-item .icon{
+    color: #0087C7;
+    font-size: 50px;    
+}
