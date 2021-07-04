@@ -1,0 +1,27 @@
+.blog-area .author {
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+.blog-area .single-card-item{
+    display: block;
+    color: #8B8888;
+    transition: all .3s ease;
+}
+.blog-area .single-card-item:hover {
+    background-color: #F5B752; 
+    color: #fff;   
+}
+.blog-area .single-card-item h5 {
+    color: #203047;
+    margin-bottom: 15px;
+    transition: all .3s ease;
+}
+.blog-area .single-card-item:hover h5{
+    color: #fff;
+}
+.blog-area .single-card-item p {
+    margin: 0;
+}
+.blog-area {
+    padding: 50px 0 100px;
+}

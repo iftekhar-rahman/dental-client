@@ -1,7 +1,7 @@
 import React from 'react';
 import BusinessInfo from '../BusinessInfo/BusinessInfo';
 import HeroMain from '../HeroMain/HeroMain';
-import NavBar from '../NavBar/NavBar';
+import NavBar from '../../Shared/NavBar/NavBar';
 import './HeroSection.css';
 
 const HeroSecton = () => {

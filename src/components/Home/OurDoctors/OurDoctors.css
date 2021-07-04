@@ -1,0 +1,15 @@
+.ourdoctors-area {
+    padding: 100px 0;
+}
+.ourdoctors-area .single-card-item {
+    padding: 0;
+    text-align: center;
+}
+.ourdoctors-area .single-card-item h5 {
+    color: #203047;
+    font-weight: 700;
+    margin-top: 20px;
+}
+.ourdoctors-area .single-card-item a{
+    color: #F5B752;
+}

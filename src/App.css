@@ -21,9 +21,9 @@ ul{
   text-transform: uppercase;
   font-weight: 700;
   border-radius: 3px;
-  display: inline-block;
   transition: all .5s ease;
   border: 1px solid transparent;
+  display: inline-block;
 }
 .boxed-btn:hover {
   background: #0087C7;
@@ -40,4 +40,28 @@ ul{
   margin-bottom: 70px;
   font-size: 40px;
   text-transform: capitalize;
+}
+.text-brand{
+  color: #0087C7;
+}
+
+
+.single-card-item {
+  padding: 40px 30px;
+}
+.single-card-item .author {
+  margin-top: 40px;
+  position: relative;
+  padding-left: 65px;
+}
+.single-card-item .author img {
+  max-width: 50px;
+  position: absolute;
+  left: 0;
+  top: -2px;
+}
+.single-card-item .author h6 {
+  color: #0087C7;
+  margin: 0 0 5px;
+  font-weight: 700;
 }

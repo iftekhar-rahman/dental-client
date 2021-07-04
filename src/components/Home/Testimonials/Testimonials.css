@@ -1,0 +1,9 @@
+.testimonials-area {
+    padding: 100px 0;
+}
+.testimonials-area .quote {
+    color: #0087C7;
+    font-size: 110px;
+    float: right;
+    opacity: .3;
+}

@@ -1,0 +1,36 @@
+.footer-area{
+    background-image: url(../../../img/footer-bg.png);
+    background-size: cover;
+}
+.single-footer-widget h4 {
+    color: #0087C7;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 700;
+}
+.single-footer-widget ul li a {
+    color: #8B8888;
+}
+.single-footer-widget ul li a:hover {
+    color: #0087C7;
+}
+.footer-area li{
+    padding-bottom: 10px;
+}
+.social-media .icon{
+   
+}
+.social-media li a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    color: #1cc7c1;
+    border-radius: 50%;
+    border: 1px solid #6ACECE;
+    text-align: center;
+    line-height: 40px;
+}
+.social-media li a:hover{
+    background-color: #6ACECE ;
+    color:white;
+}
