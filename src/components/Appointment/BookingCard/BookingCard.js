@@ -8,9 +8,9 @@ const BookingCard = ({booking}) => {
     function openModal() {
       setIsOpen(true);
     }
-    // function closeModal() {
-    //   setIsOpen(false);
-    // }
+    function closeModal(){
+        setIsOpen(false);
+    }
     return (
         <div className="col-md-4">
             <div className="single-appointment-card shadow text-center p-5 mb-4">
@@ -18,7 +18,7 @@ const BookingCard = ({booking}) => {
                 <h6 className="text-dark">{booking.visitingHour}</h6>
                 <small className="text-uppercase d-block">{booking.totalSpace}</small>
                 <button onClick={openModal} className="boxed-btn mt-3" type="button">Book Appointent</button>
-                <AppointmentForm appointmentModal={modalIsOpen} appointmentTitle={booking.subject}></AppointmentForm>
+                <AppointmentForm modalIsOpen={modalIsOpen} appointmentTitle={booking.subject} closeModal={closeModal} ></AppointmentForm>
             </div>
         </div>
     );

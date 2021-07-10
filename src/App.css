@@ -14,6 +14,10 @@ ul{
   margin: 0;
   padding: 0;
 }
+a, button{
+  transition: all .3s ease;
+  text-decoration: none;
+}
 .boxed-btn {
   background: #F5B752;
   color: #fff;
@@ -64,4 +68,51 @@ ul{
   color: #0087C7;
   margin: 0 0 5px;
   font-weight: 700;
+}
+
+
+
+.react-calendar {
+  width: 100% !important;
+  border: 1px solid #E8EBF2 !important;
+  height: 600px !important;
+  padding: 40px 25px !important;
+}
+.react-calendar__navigation {
+  height: 50px !important;
+  margin-bottom: 3em !important;
+  font-size: 22px !important;
+}
+.react-calendar__navigation button {
+  color: #686868 !important;
+}
+abbr[data-bs-original-title], abbr[title]{
+  text-decoration: none !important;
+}
+.react-calendar__month-view__weekdays {
+  text-transform: capitalize !important;
+  font-weight: normal !important;
+  font-size: 16px !important;
+  color: #686868 !important;
+  margin-bottom: 30px !important;
+}
+.react-calendar .react-calendar__tile {
+  margin-bottom: 15px !important;
+  color: #686868 ;
+}
+.react-calendar__tile--active {
+  background: #F5B752 !important;
+  color: white !important;
+}
+.react-calendar button {
+  border-radius: 10px !important;
+}
+
+.dashboard-area .container-fluid {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.dashboard-area {
+  background: #e1f5ff;
+  overflow: hidden;
 }

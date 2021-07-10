@@ -1,6 +1,8 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import Modal from 'react-modal';
 import { useForm } from "react-hook-form";
+// import { UserContext } from '../../../App';
+// import { useHistory } from 'react-router-dom';
 
 const customStyles = {
     content: {
@@ -21,14 +23,32 @@ const customStyles = {
 
 Modal.setAppElement('#root');
 
-const AppointmentForm = ({appointmentModal, appointmentTitle}) => {
+const AppointmentForm = ({modalIsOpen, closeModal, appointmentTitle}) => {
     const { register, handleSubmit, formState: { errors } } = useForm();
-    const onSubmit = data => console.log(data);
+   
+    const onSubmit = data => {
+        data.service = appointmentTitle;
+        data.created = new Date();
+        // console.log(data);
+        fetch('http://localhost:5000/addAppointment', {
+            method: 'POST',
+            headers: {'content-type': 'application/json'},
+            body: JSON.stringify(data)
+        })
+        .then(res => res.json())
+        .then(success => {
+            if(success){
+                closeModal();
+                alert('Appointment created successfully');
+            }
+        })
+        
+    };
     return (
         <div>
             <Modal
-                // onRequestClose={closeModal}
-                isOpen={appointmentModal}
+                onRequestClose={closeModal}
+                isOpen={modalIsOpen}
                 style={customStyles}
                 contentLabel="Example Modal"
                 >
@@ -51,10 +71,10 @@ const AppointmentForm = ({appointmentModal, appointmentTitle}) => {
                         <input {...register("email", { required: true })} placeholder="Your Email" class="form-control pt-2 pb-2"/>
                         {errors.email && <small className="text-danger mt-1 d-block">Email is required</small>}
                     </div>
-                    <div className="mb-3">
+                    {/* <div className="mb-3">
                         <input {...register("date", { required: true })} placeholder="Date" class="form-control pt-2 pb-2"/>
                         {errors.date && <small className="text-danger mt-1 d-block">Date is required</small>}
-                    </div>
+                    </div> */}
                     <div className="d-flex justify-content-end">
                         <input className="boxed-btn pt-2 pb-2 ps-5 pe-5" type="submit" value="Send"/>
                     </div>

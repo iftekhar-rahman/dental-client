@@ -1,0 +1,11 @@
+html, body, #root{
+    height: 100%;
+    width: 100%;
+}
+.login-page-area{
+    background-image: url(../../../img/doctors.png);
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+}

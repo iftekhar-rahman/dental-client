@@ -1,0 +1,36 @@
+.sidebar {
+    height: 100%;
+    background: #0087C7;
+    padding: 100px 0 0 30px;
+}
+
+.sidebar a {
+    color: #fff;
+}
+
+.sidebar ul li a {
+    padding: 15px;
+    display: block;
+    font-weight: 600;
+}
+
+.sidebar ul li {
+    position: relative;
+}
+.sidebar ul li:hover a, .sidebar button:hover{
+    color: #F5B752;    
+}
+.sidebar button {
+    position: absolute;
+    left: 30px;
+    bottom: 40px;
+    background: transparent;
+    border: 0;
+    color: #fff;
+    padding: 10px;
+}
+.dashboard-area h2 {
+    color: #203047;
+    font-size: 26px;
+    font-weight: 600;
+}
