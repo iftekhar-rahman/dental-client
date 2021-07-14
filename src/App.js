@@ -10,6 +10,7 @@ import {
 import Login from './components/Login/Login/Login';
 import { createContext, useState } from 'react';
 import Dashboard from './components/Dashboard/Dashboard/Dashboard';
+import AddDoctors from './components/AddDoctors/AddDoctors';
 
 export const UserContext = createContext();
 
@@ -29,6 +30,9 @@ function App() {
           </PrivateRoute>
           <Route path="/dashboard/appointment">
             <Dashboard></Dashboard>
+          </Route>
+          <Route path="/add-doctors">
+            <AddDoctors></AddDoctors>
           </Route>
           <Route path="/login">
             <Login></Login>
